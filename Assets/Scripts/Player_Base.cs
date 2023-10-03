@@ -26,7 +26,7 @@ public class Player_Base : MonoBehaviour
         float speed = 1f;
         if (Input.GetKey("left shift") == true)
         {
-            speed = 3f;
+            speed = 2f;
         }
         else
         {
@@ -38,7 +38,6 @@ public class Player_Base : MonoBehaviour
         }
         if (Input.GetKeyDown("w") == true && isTouchingGround)
         {
-            print("player pressed w");
             rb.AddForce(new Vector3(0, 3, 0), ForceMode2D.Impulse);
             animator.SetBool("Jump", true);
         }
@@ -49,15 +48,13 @@ public class Player_Base : MonoBehaviour
         if (Input.GetKey("a") == true)
         {
             animator.SetFloat("Speed", 1);
-            print("player pressed a");
-            gameObject.transform.localScale = new Vector3(-2,2,2);
+            gameObject.transform.localScale = new Vector3(-1,1,1);
             transform.position = new Vector2(transform.position.x - (1 * speed * Time.deltaTime), transform.position.y);
         }
         else if (Input.GetKey("d") == true)
         {
             animator.SetFloat("Speed", 1);
-            print("player pressed d");
-            gameObject.transform.localScale = new Vector3(2,2,2);
+            gameObject.transform.localScale = new Vector3(1,1,1);
             transform.position = new Vector2(transform.position.x + (1 * speed * Time.deltaTime), transform.position.y);
         }
         else
