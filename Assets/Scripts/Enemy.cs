@@ -28,14 +28,14 @@ void Update()
         }
         if(distance < 0)
         {
-            transform.transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
             print("flipped");
         }
         else
         {
-            transform.transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
-        if (distance < 3)
+        if (distance < 2 && distance > -2)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             animator.SetBool("move", true);

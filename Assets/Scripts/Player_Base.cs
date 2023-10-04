@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Player_Base : MonoBehaviour
 {
+    float floatValue = 1.5f;
     Rigidbody2D rb;
     public Animator animator;
 
@@ -23,43 +24,43 @@ public class Player_Base : MonoBehaviour
     void Update()
     {
         isTouchingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        float speed = 1f;
-        if (Input.GetKey("left shift") == true)
-        {
-            speed = 2f;
-        }
-        else
-        {
-            animator.SetFloat("Speed", 0);
-        }
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            animator.SetTrigger("Attack");
+            animator.SetTrigger("attack");
         }
-        if (Input.GetKeyDown("w") == true && isTouchingGround)
+        if( isTouchingGround )
         {
-            rb.AddForce(new Vector3(0, 3, 0), ForceMode2D.Impulse);
-            animator.SetBool("Jump", true);
+            animator.SetBool("fall",false);
         }
         else
         {
-            animator.SetBool("Jump", false);
+            animator.SetBool("fall", true);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) == true && isTouchingGround)
+        {
+            rb.AddForce(new Vector3(0, 3, 0), ForceMode2D.Impulse);
+            animator.SetBool("jump", true);
+        }
+        else
+        {
+            animator.SetBool("jump", false);
         }
         if (Input.GetKey("a") == true)
         {
-            animator.SetFloat("Speed", 1);
+            animator.SetBool("move", true);
             gameObject.transform.localScale = new Vector3(-1,1,1);
-            transform.position = new Vector2(transform.position.x - (1 * speed * Time.deltaTime), transform.position.y);
+            transform.position = new Vector2(transform.position.x - (floatValue * Time.deltaTime), transform.position.y);
         }
         else if (Input.GetKey("d") == true)
         {
-            animator.SetFloat("Speed", 1);
+            animator.SetBool("move", true);
             gameObject.transform.localScale = new Vector3(1,1,1);
-            transform.position = new Vector2(transform.position.x + (1 * speed * Time.deltaTime), transform.position.y);
+            transform.position = new Vector2(transform.position.x + (floatValue * Time.deltaTime), transform.position.y);
         }
         else
         {
-            animator.SetFloat("Speed", 0);
+            animator.SetBool("move", false);
         }
     }
 }
