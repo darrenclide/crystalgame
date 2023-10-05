@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 77b9109009ff7fe44b4079c11c3e3fab
+guid: cbe9a640a0eb138498e010e76058226c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6991849013916550155
-    second: Death_0
+      213: -3933586588895843495
+    second: life crystals_0
   - first:
-      213: -276728812324164698
-    second: Death_1
+      213: 347266403006194594
+    second: life crystals_1
   - first:
-      213: 3156895337291164288
-    second: Death_2
+      213: -881647908729241932
+    second: life crystals_2
   - first:
-      213: 1400002288684528572
-    second: Death_3
+      213: -4758510296078314828
+    second: life crystals_3
+  - first:
+      213: 3677289252158093230
+    second: life crystals_4
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -92,67 +95,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -167,85 +110,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Death_0
+      name: life crystals_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 46
-        width: 46
-        height: 40
+        x: 128
+        y: 82
+        width: 8
+        height: 9
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0449ad32a9080160800000000000000
-      internalID: 6991849013916550155
+      spriteID: 95b6f93a6d71969c0800000000000000
+      internalID: -3933586588895843495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death_1
+      name: life crystals_1
       rect:
         serializedVersion: 2
-        x: 209
-        y: 48
-        width: 37
-        height: 40
+        x: 136
+        y: 80
+        width: 12
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ab6d428c9cd82cf0800000000000000
-      internalID: -276728812324164698
+      spriteID: 2a3ac9124fcb1d400800000000000000
+      internalID: 347266403006194594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death_2
+      name: life crystals_2
       rect:
         serializedVersion: 2
-        x: 357
-        y: 49
-        width: 39
-        height: 40
+        x: 149
+        y: 78
+        width: 11
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08aa354559b8fcb20800000000000000
-      internalID: 3156895337291164288
+      spriteID: 4be3a3fe5e1c3c3f0800000000000000
+      internalID: -881647908729241932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death_3
+      name: life crystals_3
       rect:
         serializedVersion: 2
-        x: 507
-        y: 49
-        width: 53
-        height: 40
+        x: 162
+        y: 80
+        width: 12
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb376cdf9aecd6310800000000000000
-      internalID: 1400002288684528572
+      spriteID: 4b2963ee81066fdb0800000000000000
+      internalID: -4758510296078314828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: life crystals_4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 79
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7be3b771b580330800000000000000
+      internalID: 3677289252158093230
       vertices: []
       indices: 
       edges: []
@@ -253,7 +217,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4fb4c7cb32a174c4ea2f1b8ed31ceee4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -261,10 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Death_0: 6991849013916550155
-      Death_1: -276728812324164698
-      Death_2: 3156895337291164288
-      Death_3: 1400002288684528572
+      life crystals_0: -3933586588895843495
+      life crystals_1: 347266403006194594
+      life crystals_2: -881647908729241932
+      life crystals_3: -4758510296078314828
+      life crystals_4: 3677289252158093230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

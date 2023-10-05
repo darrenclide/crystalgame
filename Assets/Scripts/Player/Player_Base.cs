@@ -25,10 +25,6 @@ public class Player_Base : MonoBehaviour
     {
         isTouchingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            animator.SetTrigger("attack");
-        }
         if( isTouchingGround )
         {
             animator.SetBool("fall",false);
