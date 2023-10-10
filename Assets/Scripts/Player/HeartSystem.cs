@@ -42,7 +42,10 @@ public class HeartSystem : MonoBehaviour
         if (dead == true && Input.GetKeyDown(KeyCode.Space) == true)
         {
             life = 5;
-            crystals[life].gameObject.SetActive(true);
+            crystals[1].gameObject.SetActive(true);
+            crystals[2].gameObject.SetActive(true);
+            crystals[3].gameObject.SetActive(true);
+            crystals[4].gameObject.SetActive(true);
             dead = false;
         }
     }
