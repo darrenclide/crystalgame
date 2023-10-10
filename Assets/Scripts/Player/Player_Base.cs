@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Player_Base : MonoBehaviour
 {
+    HelperScript helper;
     float floatValue = 1.5f;
     Rigidbody2D rb;
     public Animator animator;
@@ -17,6 +18,8 @@ public class Player_Base : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        helper = gameObject.AddComponent<HelperScript>();
+
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -45,18 +48,26 @@ public class Player_Base : MonoBehaviour
         if (Input.GetKey("a") == true)
         {
             animator.SetBool("move", true);
-            gameObject.transform.localScale = new Vector3(-1,1,1);
+            helper.FlipObject(true);
             transform.position = new Vector2(transform.position.x - (floatValue * Time.deltaTime), transform.position.y);
         }
         else if (Input.GetKey("d") == true)
         {
             animator.SetBool("move", true);
-            gameObject.transform.localScale = new Vector3(1,1,1);
+            helper.FlipObject(false);
             transform.position = new Vector2(transform.position.x + (floatValue * Time.deltaTime), transform.position.y);
         }
         else
         {
             animator.SetBool("move", false);
+        }
+        if(Input.GetKey("h") == true)
+        {
+            helper.HelloWorld(true);
+        }
+        else
+        {
+            helper.HelloWorld(false);
         }
     }
 }

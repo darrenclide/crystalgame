@@ -9,6 +9,7 @@ public class HeartSystem : MonoBehaviour
     private  bool dead;
     public Animator animator;
     public GameObject[] crystals;
+    public GameObject[] mortis;
     public int life;
     // Start is called before the first frame update
     void Start()
@@ -24,8 +25,25 @@ public class HeartSystem : MonoBehaviour
         if(life < 1)
         {
             dead = true;
-            Destroy(crystals[0].gameObject);
-            animator.SetBool("death",true);
+        }
+        else
+        {
+            dead = false;
+        }
+        if(dead == true)
+        {
+            mortis[0].gameObject.SetActive(true);
+            transform.position = new Vector3(0f, 0.35f, 0f);
+        }
+        else
+        {
+            mortis[0].gameObject.SetActive(false);
+        }
+        if (dead == true && Input.GetKeyDown(KeyCode.Space) == true)
+        {
+            life = 5;
+            crystals[life].gameObject.SetActive(true);
+            dead = false;
         }
     }
     public void TakeDamage(int amount)
