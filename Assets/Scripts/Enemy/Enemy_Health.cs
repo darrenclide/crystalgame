@@ -7,6 +7,7 @@ public class Enemy_Health : MonoBehaviour
     public Animator animator;
     public int maxHealth = 3;
     public int currentHealth;
+    public GameObject crystal;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,8 @@ public class Enemy_Health : MonoBehaviour
         animator.SetBool("dead",true);
         this.GetComponent<Collider2D>().enabled=false;
         this.GetComponent<EnemyScript>().enabled = false;
-        
+
+        GameObject clone;
+        clone = Instantiate(crystal, transform.position, transform.rotation);
     }
 }

@@ -10,11 +10,11 @@ public class HelperScript : MonoBehaviour
 
         if (flip == true)
         {
-            sr.flipX = true;
+            gameObject.transform.localScale = new Vector3(-1,1,1);
         }
         else
         {
-            sr.flipX = false;
+            gameObject.transform.localScale = new Vector3(1,1,1);
         }
     }
     public void HelloWorld(bool text)
